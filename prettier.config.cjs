@@ -2,6 +2,7 @@
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 
 const config = {
+  printWidth: 120,
   endOfLine: "lf",
   semi: true,
   singleQuote: false,
