@@ -17,7 +17,9 @@ export function formatDate(input: string | number): string {
 }
 
 export function absoluteUrl(path: string) {
-  return `${env.NEXT_PUBLIC_APP_URL}${path}`;
+  if (env.NEXT_PUBLIC_APP_URL) {
+    return `${env.NEXT_PUBLIC_APP_URL}${path}`;
+  }
 }
 
 export function slugify(string: string) {
