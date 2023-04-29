@@ -27,5 +27,5 @@ export default async function Page() {
   );
 }
 
-export const runtime = "experimental-edge";
+export const runtime = "edge";
 export const revalidate = 0;
